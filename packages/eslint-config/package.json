@@ -1,0 +1,10 @@
+{
+  "name": "@dantruyen/eslint-config",
+  "version": "1.0.0",
+  "description": "ESLint Configuration for DanTruyen.",
+  "main": "index.js",
+  "repository": "https://github.com/dantruyen/dantruyen-design-system/packages/eslint-config",
+  "author": "Dan Truyen <dantruyenteam@gmail.com>",
+  "license": "MIT",
+  "private": false
+}
