@@ -1,0 +1,7 @@
+.*
+**/tsconfig.json
+**/jest.config.js
+storybook-static
+node_modules
+src
+scripts
