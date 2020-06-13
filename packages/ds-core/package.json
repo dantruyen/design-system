@@ -1,0 +1,22 @@
+{
+  "name": "@dantruyen/ds-core",
+  "version": "1.0.0",
+  "description": "Core configuration and styles",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dantruyen/dantruyen-design-system.git",
+    "directory": "packages/ds-core"
+  },
+  "author": "Dan Truyen <dantruyenteam@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "autoprefixer": "^9.8.0",
+    "postcss-cli": "^7.1.1",
+    "tailwindcss": "^1.4.6"
+  },
+  "scripts": {
+    "build": "postcss src/core.css -o lib/core.css",
+    "start": "postcss src/core.css -o lib/core.css -w"
+  }
+}

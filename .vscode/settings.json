@@ -1,0 +1,20 @@
+{
+    "[typescript]": {
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": true
+        }
+    },
+    "[typescriptreact]": {
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": true
+        }
+    },
+    "[markdown]": {
+        "editor.formatOnSave": false
+    },
+    "eslint.workingDirectories": [
+        "packages/react-components"
+    ]
+}
