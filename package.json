@@ -6,6 +6,7 @@
   },
   "scripts": {
     "start": "lerna run --parallel start",
+    "build": "lerna run build",
     "build-storybook": "lerna run build-storybook"
   },
   "workspaces": ["packages/*"]
