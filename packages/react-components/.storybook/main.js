@@ -11,4 +11,14 @@ module.exports = {
     '@storybook/addon-links',
     '@storybook/preset-typescript',
   ],
+  webpack: async (config) => ({
+    ...config,
+    resolve: {
+      ...config.resolve,
+      alias: {
+        ...config.resolve.alias,
+        'root': require('path').resolve(__dirname, '../src'),
+      },
+    },
+  }),
 };
