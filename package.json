@@ -5,7 +5,8 @@
     "lerna": "^3.22.0"
   },
   "scripts": {
-    "start": "lerna run --parallel start"
+    "start": "lerna run --parallel start",
+    "build-storybook": "lerna run build-storybook"
   },
   "workspaces": ["packages/*"]
 }
