@@ -2,12 +2,25 @@
   "name": "root",
   "private": true,
   "devDependencies": {
-    "lerna": "^3.22.0"
+    "husky": "^4.2.5",
+    "lerna": "^3.22.0",
+    "parcel": "^2.0.0-alpha.3.2"
   },
   "scripts": {
     "start": "lerna run --parallel start",
-    "build": "lerna run build",
-    "build-storybook": "lerna run build-storybook"
+    "build": "yarn build:core && yarn build:react",
+    "build:react": "parcel build packages/react-components",
+    "build:core": "lerna run build --scope=@dantruyen/ds-core",
+    "build-storybook": "lerna run build-storybook",
+    "lint": "lerna run lint"
   },
-  "workspaces": ["packages/*"]
+  "workspaces": [
+    "packages/*"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint",
+      "pre-push": "yarn build"
+    }
+  }
 }

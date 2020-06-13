@@ -2,8 +2,6 @@
   "name": "@dantruyen/react-components",
   "version": "1.0.0",
   "description": "React Components for Dan Truyen Design System",
-  "main": "lib/index.cjs.js",
-  "module": "lib/index.esm.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/dantruyen/dantruyen-design-system.git",
@@ -11,6 +9,29 @@
   },
   "author": "Dan Truyen <dantruyenteam@gmail.com>",
   "license": "MIT",
+  "source": "src/react-components.tsx",
+  "main": "dist/main.js",
+  "module": "dist/module.js",
+  "types": "dist/types.d.ts",
+  "targets": {
+    "module": {
+      "includeNodeModules": {
+        "react": false,
+        "react-dom": false,
+        "@dantruyen/ds-core": false
+      }
+    },
+    "main": {
+      "includeNodeModules": {
+        "react": false,
+        "react-dom": false,
+        "@dantruyen/ds-core": false
+      }
+    }
+  },
+  "dependencies": {
+    "clsx": "^1.1.1"
+  },
   "devDependencies": {
     "@babel/core": "^7.10.2",
     "@babel/preset-env": "^7.10.2",
@@ -35,7 +56,6 @@
     "autoprefixer": "^9.8.0",
     "babel-eslint": "10.x",
     "babel-loader": "^8.1.0",
-    "clsx": "^1.1.1",
     "eslint": "^7.2.0",
     "eslint-config-prettier": "6.x",
     "eslint-config-react-app": "^5.2.1",
@@ -46,7 +66,7 @@
     "eslint-plugin-react": "7.x",
     "eslint-plugin-react-hooks": "4.x",
     "fork-ts-checker-webpack-plugin": "^5.0.0",
-    "parcel": "2.0.0-alpha.3.2",
+    "parcel": "^2.0.0-alpha.3.2",
     "postcss-modules": "^2.0.0",
     "prettier": "^2.0.5",
     "react": "^16.8.0",
@@ -65,6 +85,7 @@
   "scripts": {
     "storybook": "start-storybook -p 6969",
     "build-storybook": "build-storybook -o storybook-static",
-    "start": "yarn storybook"
+    "start": "yarn storybook",
+    "lint": "eslint --ext .ts,.tsx src"
   }
 }
