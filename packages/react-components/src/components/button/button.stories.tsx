@@ -7,4 +7,6 @@ export default {
     title: 'Components/Button',
 }
 
-export const Default: React.FunctionComponent = () => <Button>Button</Button>
+export const Neutral: React.FunctionComponent = () => <Button variant="neutral">Neutral Button</Button>
+export const Primary: React.FunctionComponent = () => <Button variant="primary">Primary Button</Button>
+export const Danger: React.FunctionComponent = () => <Button variant="danger">Danger Button</Button>

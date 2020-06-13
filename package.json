@@ -8,10 +8,10 @@
   },
   "scripts": {
     "start": "lerna run --parallel start",
-    "build": "yarn build:core && yarn build:react",
+    "build": "NODE_ENV=production yarn build:core && yarn build:react",
     "build:react": "parcel build packages/react-components",
     "build:core": "lerna run build --scope=@dantruyen/ds-core",
-    "build-storybook": "lerna run build-storybook",
+    "build-storybook": "NODE_ENV=production lerna run build-storybook",
     "lint": "lerna run lint"
   },
   "workspaces": [

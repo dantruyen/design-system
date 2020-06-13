@@ -38,6 +38,7 @@
     "@babel/preset-react": "^7.10.1",
     "@dantruyen/ds-core": "^1.0.0",
     "@dantruyen/eslint-config-react": "^1.0.0",
+    "@fullhuman/postcss-purgecss": "^2.3.0",
     "@storybook/addon-a11y": "^5.3.19",
     "@storybook/addon-actions": "^5.3.19",
     "@storybook/addon-backgrounds": "^5.3.19",
