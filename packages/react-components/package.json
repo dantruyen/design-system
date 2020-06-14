@@ -18,14 +18,16 @@
       "includeNodeModules": {
         "react": false,
         "react-dom": false,
-        "@dantruyen/ds-core": false
+        "@dantruyen/ds-core": false,
+        "@dantruyen/react-icons": false
       }
     },
     "main": {
       "includeNodeModules": {
         "react": false,
         "react-dom": false,
-        "@dantruyen/ds-core": false
+        "@dantruyen/ds-core": false,
+        "@dantruyen/react-icons": false
       }
     }
   },
@@ -37,6 +39,7 @@
     "@babel/preset-env": "^7.10.2",
     "@babel/preset-react": "^7.10.1",
     "@dantruyen/ds-core": "^1.0.0",
+    "@dantruyen/react-icons": "^1.0.0",
     "@dantruyen/eslint-config-react": "^1.0.0",
     "@fullhuman/postcss-purgecss": "^2.3.0",
     "@storybook/addon-a11y": "^5.3.19",
@@ -67,7 +70,6 @@
     "eslint-plugin-react": "7.x",
     "eslint-plugin-react-hooks": "4.x",
     "fork-ts-checker-webpack-plugin": "^5.0.0",
-    "parcel": "^2.0.0-alpha.3.2",
     "postcss-modules": "^2.0.0",
     "prettier": "^2.0.5",
     "react": "^16.8.0",
@@ -77,6 +79,7 @@
   },
   "peerDependencies": {
     "@dantruyen/ds-core": "^1.0.0",
+    "@dantruyen/react-icons": "^1.0.0",
     "react": "^16.8.0",
     "react-dom": "^16.8.0"
   },
@@ -87,6 +90,7 @@
     "storybook": "start-storybook -p 6969",
     "build-storybook": "build-storybook -o storybook-static",
     "start": "yarn storybook",
-    "lint": "eslint --ext .ts,.tsx src"
+    "lint": "eslint --ext .ts,.tsx src",
+    "build": "parcel build ."
   }
 }

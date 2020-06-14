@@ -8,11 +8,16 @@
   },
   "scripts": {
     "start": "lerna run --parallel start",
-    "build": "NODE_ENV=production yarn build:core && yarn build:react",
-    "build:react": "parcel build packages/react-components",
+    "build": "NODE_ENV=production lerna run build",
+
+    "build:react": "lerna run build --scope=@dantruyen/react-components",
     "build:core": "lerna run build --scope=@dantruyen/ds-core",
+    "build:icons": "lerna run build --scope=@dantruyen/react-icons",
+
     "build-storybook": "NODE_ENV=production lerna run build-storybook",
-    "lint": "lerna run lint"
+    "lint": "lerna run lint",
+
+    "bootstrap": "lerna bootstrap && lerna link"
   },
   "workspaces": [
     "packages/*"
