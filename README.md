@@ -3,7 +3,7 @@
 ## Development
 ### Prepare
 - Install [Yarn 1](https://classic.yarnpkg.com/)
-- Run `yarn` at project root
+- Run `yarn bootstrap` at project root
 
 ### Commands
 - `yarn start` for development session
