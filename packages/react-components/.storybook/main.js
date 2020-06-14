@@ -9,7 +9,6 @@ module.exports = {
     '@storybook/addon-actions',
     '@storybook/addon-storysource',
     '@storybook/addon-links',
-    '@storybook/preset-typescript',
   ],
   webpack: async (config) => ({
     ...config,
