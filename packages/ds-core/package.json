@@ -4,7 +4,7 @@
   "description": "Core configuration and styles",
   "repository": {
     "type": "git",
-    "url": "https://github.com/dantruyen/dantruyen-design-system.git",
+    "url": "https://github.com/dantruyen/design-system.git",
     "directory": "packages/ds-core"
   },
   "author": "Dan Truyen <dantruyenteam@gmail.com>",

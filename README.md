@@ -1,6 +1,6 @@
 # Dan Truyen Design System
 
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/dantruyen/dantruyen-design-system/Test%20CI?style=flat-square) ![Storybook@Netlify](https://img.shields.io/netlify/2c470b61-7967-45c7-88f8-47d82ef5912c?label=Storybook%40Netlify&style=flat-square)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/dantruyen/design-system/Test%20CI?style=flat-square) ![Storybook@Netlify](https://img.shields.io/netlify/2c470b61-7967-45c7-88f8-47d82ef5912c?label=Storybook%40Netlify&style=flat-square)
 
 ## Storybook
 https://design.dantruyen.com/

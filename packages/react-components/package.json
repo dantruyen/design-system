@@ -4,7 +4,7 @@
   "description": "React Components for Dan Truyen Design System",
   "repository": {
     "type": "git",
-    "url": "https://github.com/dantruyen/dantruyen-design-system.git",
+    "url": "https://github.com/dantruyen/design-system.git",
     "directory": "packages/react-components"
   },
   "author": "Dan Truyen <dantruyenteam@gmail.com>",

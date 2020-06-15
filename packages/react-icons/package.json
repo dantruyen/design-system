@@ -4,7 +4,7 @@
   "description": "React version of Dan Truyen Icons",
   "repository": {
     "type": "git",
-    "url": "https://github.com/dantruyen/dantruyen-design-system.git",
+    "url": "https://github.com/dantruyen/design-system.git",
     "directory": "packages/react-icons"
   },
   "source": "src/index.tsx",
