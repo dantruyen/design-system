@@ -9,16 +9,16 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [10.x, 12.x, 14.x]
+        node-version: [12.x]
 
     steps:
     - uses: actions/checkout@v2
-      
+
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-        
+
     - name: Cache node modules
       uses: actions/cache@v2
       env:
@@ -31,12 +31,12 @@ jobs:
           ${{ runner.os }}-build-${{ env.cache-name }}-
           ${{ runner.os }}-build-
           ${{ runner.os }}-
-        
+
     - name: install dependencies
       run: yarn install --frozen-lockfile
-      
+
     - name: lint
       run: yarn lint
-      
+
     - name: build
       run: yarn build
