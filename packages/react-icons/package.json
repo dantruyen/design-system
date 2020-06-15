@@ -1,6 +1,6 @@
 {
   "name": "@dantruyen/react-icons",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "React version of Dan Truyen Icons",
   "repository": {
     "type": "git",
@@ -15,15 +15,13 @@
     "module": {
       "includeNodeModules": {
         "react": false,
-        "react-dom": false,
-        "@dantruyen/ds-core": false
+        "react-dom": false
       }
     },
     "main": {
       "includeNodeModules": {
         "react": false,
-        "react-dom": false,
-        "@dantruyen/ds-core": false
+        "react-dom": false
       }
     }
   },
